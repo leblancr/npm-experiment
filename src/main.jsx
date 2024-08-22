@@ -11,5 +11,10 @@ Plotly.newPlot(
   ],
   {
     margin: { t: 0 },
+    plot_bgcolor: 'black',    // Background color of the plot area
+    paper_bgcolor: 'black',   // Background color of the entire figure
+    xaxis: { color: 'white' }, // Optional: Change x-axis line color to white
+    yaxis: { color: 'white' }, // Optional: Change y-axis line color to white
+    font: { color: 'white' },  // Optional: Change font color to white
   },
 );
