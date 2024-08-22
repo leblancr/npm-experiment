@@ -16,6 +16,7 @@
     "vitest": "^2.0.5"
   },
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "plotly.js-dist-min": "^2.34.0"
   }
 }
