@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Plotly from "plotly.js-dist-min";
 
-export default function TodoList() {
+export default function TodoList(props) {
   useEffect(() => {
     const root = document.getElementById("plotly-graph");
 
@@ -9,20 +9,20 @@ export default function TodoList() {
       root,
       [
         {
-          x: [1, 2, 3, 4, 5, 6, 7],
-          y: [1, 2, 4, 8, 16, 32, 64],
+          x: props.x_values,
+          y: props.y_values,
         },
       ],
       {
         margin: { t: 0 },
         plot_bgcolor: 'black',
         paper_bgcolor: 'black',
-        xaxis: { color: 'white' },
-        yaxis: { color: 'white' },
+        xaxis: { color: 'white', title: "Age" },
+        yaxis: { color: 'white', title: "Weight" },
         font: { color: 'white' },
       },
     );
-  }, []);
+  }, [props.x_values, props.y_values]);
 
   // components return jsx
   return (
