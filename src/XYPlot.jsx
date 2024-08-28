@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Plotly from "plotly.js-dist-min";
 
-export default function AgeWeightPlot(props) {
+export default function XYPlot(props) {
   useEffect(() => {
     // this runs when dependencies change
     const root = document.getElementById("plotly-graph");
