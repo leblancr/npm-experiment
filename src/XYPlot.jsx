@@ -18,8 +18,8 @@ export default function XYPlot(props) {
         margin: { t: 0 },
         plot_bgcolor: 'black',
         paper_bgcolor: 'black',
-        xaxis: { color: 'white', title: "Age" },
-        yaxis: { color: 'white', title: "Weight" },
+        xaxis: { color: 'white', title: "X" },
+        yaxis: { color: 'white', title: "Y" },
         font: { color: 'white' },
       },
   );

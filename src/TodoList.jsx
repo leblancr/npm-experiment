@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Plotly from "plotly.js-dist-min";
+import beauImage from "./assets/beau2.jpeg";
 
 export default function TodoList() {
   useEffect(() => {
@@ -8,16 +8,16 @@ export default function TodoList() {
   }, []);
   return (
     <>
-      <h1>Hedy Lamarr's Todos</h1>
+      <h1>Beau's Todos</h1>
       <img
-        src="https://i.imgur.com/yXOvdOSs.jpg"
-        alt="Hedy Lamarr"
-        className="photo"
+        src={beauImage}
+        alt="beau2"
+        style={{ width: '150px', height: 'auto' }}
       />
       <ul>
-        <li>Invent new traffic lights</li>
-        <li>Rehearse a movie scene</li>
-        <li>Improve the spectrum technology</li>
+        <li>Chase fox</li>
+        <li>Chew stick</li>
+        <li>Cool off in creek</li>
       </ul>
     </>
   );

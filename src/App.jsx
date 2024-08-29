@@ -23,15 +23,18 @@ function App() {
 
   return (
     <div>
-      <div className="header-container">
-        <IncrementButton count={count} setCount={setCount} /> {/* Pass state and setter as props */}
-        <h2>Clicked {count} times</h2>
-        <DecrementButton count={count} setCount={setCount} /> {/* Pass state and setter as props */}
-      </div>
       <div className="todo-container">
         <TodoList />
       </div>
-      <XYPlot x_values={xarray} y_values={yarray} />
+      <div className="header-container">
+        <IncrementButton count={count} setCount={setCount} /> {/* Pass state and setter as props */}
+          <div>
+            <h2>X = {xarray[xarray.length - 1]}</h2>
+            <h2>Y = {yarray[yarray.length - 1]}</h2>
+          </div>
+        <DecrementButton count={count} setCount={setCount} /> {/* Pass state and setter as props */}
+       </div>
+       <XYPlot x_values={xarray} y_values={yarray} />
     </div>
   );
 }
