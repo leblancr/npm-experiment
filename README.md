@@ -1,3 +1,5 @@
+Demonstrates basic javascript and React.
+
 to start:
 npx vite
 
